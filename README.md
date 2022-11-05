@@ -11,4 +11,5 @@ Remember, this comes with added risk and work as now you have to monitor what is
    1. `pip install -r requirements.txt`
 6. Create a new local DB and import the db.sql file here
 7. Create your own dbcreds.py and fill in the needed variables
-8. Run app.py like normal!
+8. Create an empty images folder
+9. Run app.py like normal!
