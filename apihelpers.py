@@ -6,12 +6,6 @@ def check_endpoint_info(sent_data, expected_data):
         if(sent_data.get(data) == None):
             return f"The {data} argument is required."
 
-def fill_optional_data(sent_data, original_data, expected_data):
-    for data in expected_data:
-        if(sent_data.get(data) != None):
-            original_data[data] = sent_data[data]
-    return original_data
-
 def save_file(file):
     # Check to see if first, the filename contains a . character. 
     # Then, split the filename around the . characters into an array
