@@ -5,6 +5,9 @@ import dbcreds
 
 
 app = Flask(__name__)
+# Adding a line that restricts the size of a file being uploaded
+# In this example, I only allow images up to 0.5 MB in size
+app.config['MAX_CONTENT_LENGTH'] = 0.5 * 1000000
 
 @app.post('/api/image')
 def post_image():
